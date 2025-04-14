@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor1: #220143;
+    --cor2: #2e0153;
+    --cor3: #661b90;
+    --cor4: #ffffff;
+    --cor5: #fcd74e;
+    --font: "Albert Sans", sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--cor2);
+}
+
+body{
+    width: 100vw;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 150px;
+}
+
+nav{
+    align-self: center;
+}
+
+header > .logo{
+    width: 200px;
+    height: 150px;
+    background-image: url("../../imagens/logo-empresa.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    background-color:var(--cor2);
+}
+
+li:hover{
+    background-color: var(--cor3);
+}
+
+li > a{
+    display: inline;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+
+.modal{
+    display: none;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.abrir-agenda{
+    margin-left: 30px;
+}
+
+.container-tabela{
+    overflow-x: scroll;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+table,th, td{
+    border: 1px solid black;
+}
+
+th,td{
+    padding: 15px;
+}
+
+tbody>tr:hover{
+    background-color: #220143;
+}
+
+tbody>tr:hover td{
+    color: #fcd74e;
+}
+

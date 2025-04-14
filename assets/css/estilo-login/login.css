@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor1: #220143;
+    --cor2: #2e0153;
+    --cor3: #661b90;
+    --cor4: #ffffff;
+    --cor5: #fcd74e;
+    --font: "Albert Sans", sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;    
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--cor1);
+}
+
+.logo > img{
+    height: 250px;
+}
+
+nav{
+    align-self: center;
+}
+
+ul{
+    justify-self: flex-end;
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--cor2);
+}
+
+li:hover{
+    background-color: var(--cor3);
+}
+
+li > a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form{
+    width: 400px;
+    padding: 20px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0.5px solid var(--cor3);
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+input[type="submit"]{
+    color: var(--cor5);
+    background-color: #220143;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+label{
+    position: relative;
+    left: 35px;
+    font-family: var(--font);
+    font-size: 23px;
+}
+

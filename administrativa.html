@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilo-administrativo/administrativo.css">
+    <title>S_estetics</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul id="items">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="modal">
+        <form action="">
+
+            <label for="Iddata">Data</label>
+            <input type="date" name="#" id="Iddata">
+
+            <label for="Idnumero-atendimento">Numero atendimento no dia</label>
+            <input type="number" name="#" id="Idnumero-atendimento">
+            
+            <label for="Idhora-agendamento">Hora 1° procedimento</label>
+            <input type="time" name="#" id="Idhora-agendamento">
+
+            <button type="submit">Criar agenda</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Filtrar tabela por data</h2>
+        
+        <input type="date" name="campo-data" id="Idcampo-data">
+
+        <button class="abrir-agenda">Abrir agenda</button>
+        
+        <div id="container-tabela">
+            <table>
+                <thead>
+                    <th>Horario</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Procedimento</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>10:00</td>
+                        <td>Teste da silva</td>
+                        <td>teste@gmail.com</td>
+                        <td>(11)XXXXX-XXXX</td>
+                        <td>Procedimento X</td>
+                    </tr>
+        
+                    <tr>
+                        <td>10:00</td>
+                        <td>Teste da silva</td>
+                        <td>teste@gmail.com</td>
+                        <td>(11)XXXXX-XXXX</td>
+                        <td>Procedimento X</td>
+                    </tr>
+                </tbody>         
+            </table>  
+        </div>      
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor1: #220143;
+    --cor2: #2e0153;
+    --cor3: #661b90;
+    --cor4: #ffffff;
+    --cor5: #fcd74e;
+    --font: "Albert Sans", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+#menu-hambuger{
+    display:none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--cor1);
+}
+
+.logo > img{
+    height: 250px;
+}
+
+nav{
+    align-self: center;
+}
+
+ul{
+    justify-self: flex-end;
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--cor2);
+}
+
+li:hover{
+    background-color: var(--cor3);
+}
+
+li > a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+h1,h2{
+    font-size: 2em;
+    color: var(--cor2);
+}
+
+p{
+    line-height: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container > div{
+    width: 50%;
+}
+
+.img-estilizacao > img{
+    display: block;
+    margin: auto;
+}
+
+
+.container > h2,p{
+    padding: 10px;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 10px;
+}
+
+.itens{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #e9e1e1;
+    border-radius: 10px;
+}
+
+.itens:hover, .itens:hover > h2{
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+.itens > h2{
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.itens > img{
+    display: block;
+    margin: auto;
+}
+
+#container-2{
+    width: 80%;
+    margin:auto;
+    margin-bottom: 80px;
+}
+
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+footer > div{
+    width: 500px;
+    margin: auto;
+
+}
+
+footer > p{
+    text-align: center;
+    background-color: #13003b
+}
+
+footer > div > a{
+    display: block;
+    margin-top: 10px ;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+
+.link-instagram::before{
+    content: url(../../imagens/icone-instagram.png);
+
+}
+
+.link-whatsapp::before{
+    content: url(../../imagens/icone-whatsapp.png);
+}
+
+.link-endereco::before{
+    content: url(../../imagens/icone-endereco.png);
+}
+
+
+
+
+
+
+
+

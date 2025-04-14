@@ -1,0 +1,10 @@
+.btn{
+    display: block;
+    background-color: #220143;
+    color:  #fcd74e;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    justify-self: center;
+}

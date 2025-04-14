@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilo-agendamento/agendamento.css">
+    <title>S_estatics</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"></div>    
+        <nav>
+            <ul id="items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Procedimentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="img"></div>
+        <main>
+            <h1>Agendamento</h1>
+            <div class="container-formulario">
+                <form action="#">
+        
+                    <label for="Idcampo-nome">Nome completo</label>
+                    <input type="text" name="campo-nome" id="Idcampo-nome" required>
+            
+                    <label for="Idcampo-email">E-mail</label>
+                    <input type="email" name="campo-email" id="Idcampo-email" required>
+            
+                    <label for="Idcampo-telefone">Celular</label>
+                    <input type="tel" name="campo-telefone" id="Idcampo-telefone" required>
+                    
+                    <div>
+                        <label for="Idcampo-procedimento">Procedimento</label>
+                        <select name="campo-procedimento" id="Idcampo-procedimento">
+                            <option value="procedimento X">Procedimento X</option>
+                            <option value="procedimento Y">Procedimento Y</option>
+                            <option value="procedimento Z">Procedimento Z</option>
+                        </select>
+                    </div>
+            
+                    <label for="Idcampo-data_hora">Agendar para</label>
+                    <input type="datetime-local" name="campo-data_hora" id="Idcampo-data_hora" required>
+            
+                    <input type="submit" value="Agendar">   
+                </form>
+    
+            </div>     
+            
+        </main>
+    </div>
+    
+</body>
+</html>
