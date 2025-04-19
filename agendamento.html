@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/estilo-agendamento/agendamento.css">
+    <link rel="stylesheet" href="assets/css/estilo-agendamento/agendamento.css" media="all">
+    <link rel="stylesheet" href="assets/css/estilo-agendamento/cell.css" media="screen">
     <title>S_estatics</title>
 </head>
 <body>
 
     <header>
-        <div class="logo"></div>    
-        <nav>
-            <ul id="items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Procedimentos</a></li>
-            </ul>
-        </nav>
+        <a href="index.html"><div class="logo"></div></a>    
     </header>
 
     <div class="container">
@@ -27,12 +22,15 @@
                 <form action="#">
         
                     <label for="Idcampo-nome">Nome completo</label>
+                    <p></p>
                     <input type="text" name="campo-nome" id="Idcampo-nome" required>
             
                     <label for="Idcampo-email">E-mail</label>
+                    <p></p>
                     <input type="email" name="campo-email" id="Idcampo-email" required>
             
                     <label for="Idcampo-telefone">Celular</label>
+                    <p></p>
                     <input type="tel" name="campo-telefone" id="Idcampo-telefone" required>
                     
                     <div>
