@@ -18,29 +18,49 @@
         </nav>
     </header>
 
-    <div class="modal">
-        <form action="">
-
-            <label for="Iddata">Data</label>
-            <input type="date" name="#" id="Iddata">
-
-            <label for="Idnumero-atendimento">Numero atendimento no dia</label>
-            <input type="number" name="#" id="Idnumero-atendimento">
-            
-            <label for="Idhora-agendamento">Hora 1° procedimento</label>
-            <input type="time" name="#" id="Idhora-agendamento">
-
-            <button type="submit">Criar agenda</button>
-        </form>
+    <div class="container-botoes">
+        <button class="adicionar-agenda">Adicionar agenda</button>
+        <button class="alterar-preco">Alterar preço</button>
     </div>
+
+
+    <div class="modal">
+        <div class="topo">X</div>
+
+        <p>Selecione um dia, um horario e o procedimento para incluir:</p>
+
+        <div class="container-inputs">
+            <input type="date">
+            <input type="time">
+            <select name="" id="">
+                <option value="Procedimento X">Procedimento X</option>
+                <option value="Procedimento Y">Procedimento Y</option>
+                <option value="Procedimento Z">Procedimento Z</option>
+            </select>
+            <button>+</button>
+        </div>
+
+        <div class="container-horarios">
+
+            <div class="icone">X</div>
+            <div class="data">10/11/2004</div>
+            <div class="horario">10:00</div>
+            <div class="procedimento">Procedimento X</div>
+            <button>Remover</button>
+        </div>
+
+        <div class="rodape">
+            <button>Criar agenda</button>
+        </div>
+
+    </div>
+
 
     <div class="container">
         <h2>Filtrar tabela por data</h2>
         
         <input type="date" name="campo-data" id="Idcampo-data">
 
-        <button class="abrir-agenda">Abrir agenda</button>
-        
         <div id="container-tabela">
             <table>
                 <thead>
