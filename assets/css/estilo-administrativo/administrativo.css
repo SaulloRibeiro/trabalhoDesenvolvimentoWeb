@@ -67,75 +67,135 @@ li > a{
 
 
 .modal{
-    width: 50%;
+    width: 60%;
     overflow-y: auto;
     margin: auto;
     margin-top: 50px;
-    border: 1px solid black;
+    border: 2px solid var(--cor3);
     border-radius: 5px;
-    display: none;
+    display: block;
+}
+
+.topo{
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #220143;
+}
+
+.mdi-close-circle-outline{
+    margin-right: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.mdi-close-circle-outline:hover{
+    color: red;
 }
 
 
 .modal > p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 
-.topo{
-    background-color: #220143;
-    border-radius: 5px 5px 0px 0px;
-}
 
 .container-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 75%;
     margin: auto;
 
 }
 
 .container-inputs > input , select{
+    flex-shrink: 1;
     height: 30px;
     margin-right: 10px;
     border: none;
-    border-bottom: 2px solid #661b90;
+    border-bottom: 2px solid var(--cor1);
     outline: 0;
 }
 
 .container-inputs > input:focus , select:focus{
-    border-color: #fcd74e;
+    border-color: var(--cor3);
 }
 
 
 .container-inputs > button{
-    font-size: 15px;
-    width: 55px;
+    width: 30%;
     height: 30px;
+    align-self: center;
+    font-size: 1rem;
+    border: none;
     background-color: green;
     color: white;
     cursor: pointer;
 }
+
+
+.container-inputs > button:active{
+    border: 1px solid white;
+    background-color: darkgreen;
+}
+
 
 .container-horarios{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    overflow-x: auto;
+}
+
+
+.container-horarios::-webkit-scrollbar{
+    margin-top: 5px;
+    width: 30px;
+    height: 10px;
+}
+
+.container-horarios::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container-horarios::-webkit-scrollbar-thumb{
+    background-color: #c9c2c2;
+    border-radius: 10px;
+    border: 2px solid transparent; /* espaço interno */
 }
 
 .icone, .data, .horario, .procedimento{
-    border:1px solid black;
+    flex-shrink: 1;
     display: inline-block;
     padding: 10px;
+    font-size: 0.8em;
+    background-color: rgba(211, 206, 206, 0.993);
 }
 
 .container-horarios > button{
-    background-color: red;
     padding: 0px 10px;
-    color: white;
+    border:none;
+    background-color: red;
     cursor: pointer;
+}
+
+.container-horarios > button:active{
+    border: 1px solid white;
+    background-color: darkred;
+}
+
+.mdi-trash-can-outline{
+    font-size: 0.8em;
+    color: white;
 }
 
 .rodape{
@@ -149,35 +209,16 @@ li > a{
     margin: 10px 0px;
     padding: 0px 10px;
     background-color: green;
+    border: none;
     color: white;
     cursor: pointer;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rodape > button:active{
+    border: 1px solid white;
+    background-color: darkgreen;
+}
 
 .container{
     width: 80%;

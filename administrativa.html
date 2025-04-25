@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/estilo-administrativo/administrativo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/estilo-administrativo/administrativo.css" media="all">
+    <link rel="stylesheet" href="assets/css/estilo-administrativo/teste.css" media="screen">
     <title>S_estetics</title>
 </head>
 <body>
@@ -20,12 +22,12 @@
 
     <div class="container-botoes">
         <button class="adicionar-agenda">Adicionar agenda</button>
-        <button class="alterar-preco">Alterar preço</button>
+        <button class="alterar-preco">Editar procedimento</button>
     </div>
 
 
     <div class="modal">
-        <div class="topo">X</div>
+        <div class="topo"><span class="mdi mdi-close-circle-outline"></span></div>
 
         <p>Selecione um dia, um horario e o procedimento para incluir:</p>
 
@@ -40,13 +42,15 @@
             <button>+</button>
         </div>
 
+        <p>Horario(s) escolhido para agenda: </p>
+
         <div class="container-horarios">
 
             <div class="icone">X</div>
             <div class="data">10/11/2004</div>
             <div class="horario">10:00</div>
-            <div class="procedimento">Procedimento X</div>
-            <button>Remover</button>
+            <div class="procedimento">Limpeza de pele</div>
+            <button><span class="mdi mdi-trash-can-outline"></span></button>
         </div>
 
         <div class="rodape">
@@ -54,6 +58,42 @@
         </div>
 
     </div>
+
+    <div class="modal">
+        <div class="topo"><span class="mdi mdi-close-circle-outline"></span></div>
+
+        <label for="">procedimento</label>
+        <select name="" id="">
+            <option value="Procedimento X">Procedimento X</option>
+            <option value="Procedimento Y">Procedimento Y</option>
+            <option value="Procedimento Z">Procedimento Z</option>
+        </select>
+
+        <label for="">preço</label>
+        <input type="text" name="" id="">
+
+        <label for="">Descrição</label>
+        <input type="text" name="" id="">
+
+        <button>Atualizar</button>
+        <button>Cancelar</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="container">
