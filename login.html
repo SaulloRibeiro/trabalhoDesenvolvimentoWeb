@@ -6,7 +6,13 @@
     <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/estilo-login/login.css" media="all">
     <link rel="stylesheet" href="teste.css">
+
+    <link rel="stylesheet" href="assets/css/estilo-login/telas.css " media="screen">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>S_estetics</title>
+
 </head>
 <body>
     <header>
@@ -16,17 +22,22 @@
     </header>
 
     <div class="container">
-        <form action="#" autocomplete="off">
-            <label for="Idcampo-nome">Usuario</label>
-            <p></p>
-            <input type="text" name="campo-nome" id="Idcampo-nome" required>
-    
-            <label for="Idcampo-senha">Senha</label>
-            <p></p>
-            <input type="password" name="campo-senha" id="Idcampo-senha" required maxlength="20">
-    
-            <!-- <input type="submit" value="Entrar"> -->
-             <a href="administrativa.html" class="btn">Entrar</a>
+        <form>
+
+            <div class="container-inputs">
+                <input type="email" name="" id="" placeholder="Email" required>
+                <i class="fa-regular fa-user"></i>    
+            </div>
+            
+            <div class="container-inputs">
+                <input type="password" name="" id="" placeholder="Senha" required>
+                <i class="fa-regular fa-eye-slash"></i>
+            </div>
+
+            <div class="container-btn">
+                <a class="btn" href="administrativa.html">Entrar</a>
+                <button>Entrar</button>
+            </div>      
         </form>
     </div>
 </body>
