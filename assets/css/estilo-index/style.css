@@ -134,6 +134,14 @@ p{
 
 }
 
+.itens > h3{
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: var(--cor5);
+}
+
 .itens > img{
     display: block;
     margin: auto;
@@ -154,9 +162,15 @@ footer{
 }
 
 footer > div{
-    width: 500px;
+    width: 30%;
     margin: auto;
     padding: 10px 0px;
+}
+
+.container-links{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 footer > p{
@@ -165,32 +179,11 @@ footer > p{
     background-color: #13003b
 }
 
-footer > div > a{
+.container-links a{
     display: block;
     margin-top: 10px ;
     text-decoration: none;
     font-style: normal;
     color: var(--cor4);
 }
-
-
-.link-instagram::before{
-    content: url(../../imagens/icone-instagram.png);
-
-}
-
-.link-whatsapp::before{
-    content: url(../../imagens/icone-whatsapp.png);
-}
-
-.link-endereco::before{
-    content: url(../../imagens/icone-endereco.png);
-}
-
-
-
-
-
-
-
 
