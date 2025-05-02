@@ -22,7 +22,7 @@
 
     <div class="container-botoes">
         <button class="adicionar-agenda">Adicionar agenda</button>
-        <button class="alterar-preco">Editar procedimento</button>
+        <button class="alterar-preco">Editar Preço</button>
     </div>
 
 
@@ -45,8 +45,6 @@
         <p>Horario(s) escolhido para agenda: </p>
 
         <div class="container-horarios">
-
-            <div class="icone">X</div>
             <div class="data">10/11/2004</div>
             <div class="horario">10:00</div>
             <div class="procedimento">Limpeza de pele</div>
@@ -61,24 +59,28 @@
 
     <div class="modal">
         <div class="topo"><span class="mdi mdi-close-circle-outline"></span></div>
-
         <div class="container-inputs-editar">
-            <label for="idProcedimentos">procedimento</label>
-            <select name="procedimentos" id="idProcedimentos">
-                <option value="Procedimento X">Procedimento X</option>
-                <option value="Procedimento Y">Procedimento Y</option>
-                <option value="Procedimento Z">Procedimento Z</option>
-            </select>
-    
-            <label for="idPreco">preço</label>
-            <input type="text" name="preco" id="idPreco">
-    
-            <label for="idDescricao">Descrição</label>
-            <input type="text" name="descricao" id="idDescricao">
+
+            <div class="div-organizadora">
+                <label for="idProcedimentos">procedimento</label>
+                <select name="procedimentos" id="idProcedimentos">
+                    <option value="Procedimento X">Procedimento X</option>
+                    <option value="Procedimento Y">Procedimento Y</option>
+                    <option value="Procedimento Z">Procedimento Z</option>
+                </select>
+            </div>
+
+            <div class="div-organizadora">
+                <label for="idPreco">preço</label>
+                <input type="text" name="preco" id="idPreco">
+            </div>
+
         </div>
 
-        <button>Atualizar</button>
-        <button>Cancelar</button>
+        <div class="rodape">
+            <button>Atualizar</button>
+            <button>Cancelar</button>
+        </div>
     </div>
 
     <div class="container">

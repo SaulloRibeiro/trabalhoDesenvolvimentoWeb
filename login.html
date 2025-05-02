@@ -24,21 +24,24 @@
     <div class="container">
         <form>
 
+            <p>E-mail informado é inválido</p>
             <div class="container-inputs">
-                <input type="email" name="" id="" placeholder="Email" required>
+                <input type="text" id="emailID" placeholder="Email">
                 <i class="fa-regular fa-user"></i>    
             </div>
             
+            <p>Este campo deve ser preenchido</p>
             <div class="container-inputs">
-                <input type="password" name="" id="" placeholder="Senha" required>
-                <i class="fa-regular fa-eye-slash"></i>
+                <input type="password" id="senhaId" placeholder="Senha">
+                <i class="fa-regular fa-eye-slash" id="olho" onclick="mostrarOuEsconderSenha()"></i>
             </div>
 
             <div class="container-btn">
                 <a class="btn" href="administrativa.html">Entrar</a>
-                <button>Entrar</button>
+                <button onclick="verificarFormulario()" id="logar">Entrar</button>
             </div>      
         </form>
     </div>
+    <script src="assets/Js/login.js"></script>
 </body>
 </html>

@@ -62,6 +62,13 @@ header > a{
     border-radius: 5px;
 }
 
+p{
+    font-size: 0.7em;
+    color: red;
+    display: none;
+}
+
+
 .container-inputs input{
     width: 100%;
     background-color: transparent;
